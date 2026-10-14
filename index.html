@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shruti Shah | Aspiring AI/ML Engineer</title>
+  <meta name="description" content="Personal portfolio of Shruti Shah, a second-year AIML Engineering student at RCPIT aspiring to become an AI/ML Engineer." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient background glow elements (Blue & Purple) -->
+  <div class="glow-bg glow-purple"></div>
+  <div class="glow-bg glow-blue"></div>
+  <div class="glow-bg glow-indigo"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-symbol">SS</span>
+        <span class="brand-name">Shruti Shah<span class="accent-dot">.ai</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline nav-btn" id="navResumeBtn">Resume</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#education" class="mobile-link">Education</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <button class="btn btn-primary" id="mobileResumeBtn" style="margin-top: 0.5rem;">View Resume</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-layout">
+          <!-- Left Column: Introduction & Details -->
+          <div class="hero-text-col">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              <span>Second-Year AIML Student &bull; RCPIT</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Shruti Shah</span>
+            </h1>
+
+            <h2 class="hero-subtitle">
+              Aspiring <span class="text-highlight">AI/ML Engineer</span>
+            </h2>
+
+            <p class="hero-description">
+              A passionate second-year Artificial Intelligence and Machine Learning engineering student at 
+              <strong>RCPIT</strong>, dedicated to building practical technology, learning intelligent algorithms, 
+              and solving real-world challenges through software.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore My Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m6 9 6 6 6-6"/>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-glass">
+                <span>Get in Touch</span>
+              </a>
+              <button class="btn btn-secondary" id="heroResumeBtn" title="Resume">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Resume</span>
+              </button>
+            </div>
+
+            <!-- Social Bar (Editable Placeholders) -->
+            <div class="social-bar">
+              <!-- EDIT HERE: Replace with your actual GitHub link -->
+              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <!-- EDIT HERE: Replace with your actual LinkedIn link -->
+              <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <!-- EDIT HERE: Replace with your actual email address -->
+              <a href="mailto:your.email@example.com" class="social-link" title="Send Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Dedicated Profile Card -->
+          <div class="hero-profile-col">
+            <div class="profile-frame-card">
+              <div class="profile-glow-ring"></div>
+              
+              <div class="profile-image-wrapper">
+                <!-- Displays profile.jpg if added, otherwise smoothly falls back to profile.svg -->
+                <img 
+                  src="profile.jpg" 
+                  alt="Shruti Shah Profile" 
+                  class="profile-image" 
+                  id="profileImg"
+                  onerror="this.onerror=null; this.src='profile.svg';" 
+                />
+              </div>
+
+              <!-- Floating Student Badges -->
+              <div class="floating-badge badge-college">
+                <span class="badge-icon">🎓</span>
+                <span>RCPIT, Shirpur</span>
+              </div>
+
+              <div class="floating-badge badge-aiml">
+                <span class="badge-icon">🤖</span>
+                <span>AIML Engineer Aspirant</span>
+              </div>
+
+              <div class="profile-status-bar">
+                <span class="status-dot"></span>
+                <span>Second Year &bull; B.Tech AIML</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Info Highlights Row -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3 class="stat-number">2nd Year</h3>
+            <p class="stat-label">B.Tech in AIML</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number">RCPIT</h3>
+            <p class="stat-label">Engineering College</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number">Python & Web</h3>
+            <p class="stat-label">Core Tech Focus</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number">AI/ML</h3>
+            <p class="stat-label">Long-Term Career Goal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven Student & Future AI Practitioner</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- About Description -->
+          <div class="about-text-card">
+            <p class="about-lead">
+              Hello! I'm <strong>Shruti Shah</strong>, a dedicated second-year engineering student pursuing a 
+              <strong>Bachelor of Technology in Artificial Intelligence and Machine Learning</strong> at 
+              <strong>RCPIT</strong>.
+            </p>
+            <p>
+              My goal is to evolve into a proficient <strong>AI/ML Engineer</strong>. I am fascinated by how 
+              mathematical principles and algorithms can learn patterns from data to automate tasks and solve 
+              meaningful challenges in communities and industries.
+            </p>
+            <p>
+              Right now, I am actively honing my programming skills in <strong>Python</strong>, building web interfaces 
+              with <strong>HTML, CSS, JavaScript, and Streamlit</strong>, and strengthening my fundamentals in 
+              data structures and machine learning theory.
+            </p>
+
+            <div class="key-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">🎯</span>
+                <div>
+                  <strong>Career Goal:</strong> Aspiring to engineer production-ready, ethical AI and Machine Learning systems.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">💡</span>
+                <div>
+                  <strong>Hands-on Project:</strong> Built the <em>Smart Village Resource Sharing Portal</em> connecting rural communities to essential resources.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">📚</span>
+                <div>
+                  <strong>Continuous Learning:</strong> Daily practice in Python programming, algorithms, and applied machine learning basics.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Clean AI-Themed Graphic Card (Replaced code snippet) -->
+          <div class="profile-visual-card">
+            <div class="visual-card-glow"></div>
+            
+            <div class="visual-header">
+              <div class="avatar-badge">
+                <img src="profile.jpg" alt="Shruti Shah" class="avatar-img" onerror="this.onerror=null; this.src='profile.svg';" />
+              </div>
+              <div class="student-info">
+                <h3 class="student-name">Shruti Shah</h3>
+                <p class="student-role">AIML Engineering Student</p>
+                <span class="student-college">RCPIT, Shirpur</span>
+              </div>
+            </div>
+
+            <!-- Abstract AI Neural Graphic -->
+            <div class="neural-graphic-container">
+              <svg class="neural-svg" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.7" />
+                    <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.8" />
+                  </linearGradient>
+                  <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#a855f7" stop-opacity="1" />
+                    <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2" />
+                  </radialGradient>
+                </defs>
+
+                <!-- Connection Lines -->
+                <line x1="50" y1="50" x2="140" y2="40" stroke="url(#lineGrad)" stroke-width="1.5" />
+                <line x1="50" y1="50" x2="140" y2="90" stroke="url(#lineGrad)" stroke-width="1.5" />
+                <line x1="50" y1="130" x2="140" y2="90" stroke="url(#lineGrad)" stroke-width="1.5" />
+                <line x1="50" y1="130" x2="140" y2="140" stroke="url(#lineGrad)" stroke-width="1.5" />
+
+                <line x1="140" y1="40" x2="230" y2="60" stroke="url(#lineGrad)" stroke-width="1.5" />
+                <line x1="140" y1="90" x2="230" y2="60" stroke="url(#lineGrad)" stroke-width="1.5" />
+                <line x1="140" y1="90" x2="230" y2="120" stroke="url(#lineGrad)" stroke-width="1.5" />
+                <line x1="140" y1="140" x2="230" y2="120" stroke="url(#lineGrad)" stroke-width="1.5" />
+
+                <line x1="230" y1="60" x2="290" y2="90" stroke="url(#lineGrad)" stroke-width="2" />
+                <line x1="230" y1="120" x2="290" y2="90" stroke="url(#lineGrad)" stroke-width="2" />
+
+                <!-- Nodes - Layer 1 -->
+                <circle cx="50" cy="50" r="7" fill="#3b82f6" class="node-pulse" />
+                <circle cx="50" cy="130" r="7" fill="#3b82f6" class="node-pulse" />
+
+                <!-- Nodes - Layer 2 (Hidden) -->
+                <circle cx="140" cy="40" r="8" fill="#6366f1" class="node-pulse" />
+                <circle cx="140" cy="90" r="9" fill="#8b5cf6" class="node-pulse" />
+                <circle cx="140" cy="140" r="8" fill="#6366f1" class="node-pulse" />
+
+                <!-- Nodes - Layer 3 -->
+                <circle cx="230" cy="60" r="8" fill="#a855f7" class="node-pulse" />
+                <circle cx="230" cy="120" r="8" fill="#a855f7" class="node-pulse" />
+
+                <!-- Output Node -->
+                <circle cx="290" cy="90" r="10" fill="url(#nodeGlow)" class="node-pulse-fast" />
+                <circle cx="290" cy="90" r="4" fill="#ffffff" />
+              </svg>
+            </div>
+
+            <!-- Focus Badges -->
+            <div class="visual-badges">
+              <span class="visual-tag">Python &amp; ML Basics</span>
+              <span class="visual-tag">Streamlit &amp; SQLite</span>
+              <span class="visual-tag">Problem Solving</span>
+              <span class="visual-tag">Web Development</span>
+            </div>
+
+            <div class="visual-footer">
+              <span class="status-indicator"></span>
+              <span>Actively learning, building, and exploring AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Abilities</span>
+          <h2 class="section-title">Skills &amp; Learning Journey</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            An honest, transparent view of my current technical competencies and the tools I am studying.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1: Programming & Scripting -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">🐍</div>
+              <div>
+                <h3>Programming Languages</h3>
+                <span class="category-sub">Core coding fundamentals</span>
+              </div>
+            </div>
+
+            <!-- Skill Progress Item: Python -->
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-level badge-beginner">Beginner</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 50%;"></div>
+              </div>
+              <span class="skill-desc">Syntax, data structures, functions, OOP, and problem solving.</span>
+            </div>
+
+            <!-- Skill Progress Item: HTML & CSS -->
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5 &amp; CSS3</span>
+                <span class="skill-level badge-foundational">Foundational</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 65%;"></div>
+              </div>
+              <span class="skill-desc">Semantic structure, styling, flexbox, grid, and responsive design.</span>
+            </div>
+
+            <!-- Skill Progress Item: JavaScript -->
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level badge-beginner">Beginner</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 45%;"></div>
+              </div>
+              <span class="skill-desc">DOM manipulation, event handling, and client-side interactivity.</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 2: AI & Machine Learning -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">🧠</div>
+              <div>
+                <h3>AI &amp; Machine Learning</h3>
+                <span class="category-sub">Academic coursework &amp; theory</span>
+              </div>
+            </div>
+
+            <!-- Skill Progress Item: AI/ML Fundamentals -->
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span class="skill-name">AI &amp; ML Fundamentals</span>
+                <span class="skill-level badge-foundational">Coursework</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 55%;"></div>
+              </div>
+              <span class="skill-desc">Supervised/unsupervised learning concepts, regression &amp; classification.</span>
+            </div>
+
+            <!-- Skill Progress Item: Data Handling -->
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span class="skill-name">Data Handling &amp; Analysis</span>
+                <span class="skill-level badge-beginner">Learning</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 45%;"></div>
+              </div>
+              <span class="skill-desc">Exploring basic datasets, data cleaning, and statistical summaries.</span>
+            </div>
+
+            <!-- Skill Progress Item: Model Exploration -->
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span class="skill-name">Algorithm Foundations</span>
+                <span class="skill-level badge-beginner">Beginner</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 50%;"></div>
+              </div>
+              <span class="skill-desc">Linear regression, decision trees, and basic evaluation metrics.</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 3: Frameworks & Databases -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">⚡</div>
+              <div>
+                <h3>Frameworks &amp; Databases</h3>
+                <span class="category-sub">App development stack</span>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <div class="tag-badge">
+                <span class="tag-title">Streamlit</span>
+                <span class="tag-subtitle">Python Web Apps</span>
+              </div>
+              <div class="tag-badge">
+                <span class="tag-title">SQLite</span>
+                <span class="tag-subtitle">Relational Storage</span>
+              </div>
+              <div class="tag-badge">
+                <span class="tag-title">SQL Queries</span>
+                <span class="tag-subtitle">CRUD Operations</span>
+              </div>
+              <div class="tag-badge">
+                <span class="tag-title">Responsive UI</span>
+                <span class="tag-subtitle">Web Layouts</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 4: Tools & Workflow -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">🛠️</div>
+              <div>
+                <h3>Tools &amp; Environments</h3>
+                <span class="category-sub">Development workspace</span>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <div class="tag-badge">
+                <span class="tag-title">Git &amp; GitHub</span>
+                <span class="tag-subtitle">Version Control</span>
+              </div>
+              <div class="tag-badge">
+                <span class="tag-title">Visual Studio Code</span>
+                <span class="tag-subtitle">Code Editor</span>
+              </div>
+              <div class="tag-badge">
+                <span class="tag-title">Jupyter Notebooks</span>
+                <span class="tag-subtitle">Python Experiments</span>
+              </div>
+              <div class="tag-badge">
+                <span class="tag-title">Linux / Command Line</span>
+                <span class="tag-subtitle">Basic Commands</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects &amp; Academic Work</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Applying engineering and programming concepts to solve practical, real-world community challenges.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Featured Project: Smart Village Resource Sharing Portal -->
+          <article class="project-card featured-project">
+            <div class="project-top">
+              <div class="project-badge">Featured Academic Project</div>
+              <div class="project-links">
+                <!-- EDIT HERE: Replace with your actual GitHub repo link -->
+                <a href="https://github.com/your-username/smart-village-resource-sharing-portal" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Smart Village Resource Sharing Portal</h3>
+            
+            <p class="project-description">
+              A community-centered web application developed to bridge resource gaps in rural areas. The portal 
+              allows villagers to list, discover, and request agricultural machinery, equipment, tools, and shared 
+              community resources. Built with an intuitive Streamlit frontend and backed by an SQLite database for 
+              lightweight, reliable local data storage.
+            </p>
+
+            <div class="project-highlights-box">
+              <h4>Key Capabilities:</h4>
+              <ul>
+                <li>✦ <strong>Resource Management:</strong> Add, update, and manage equipment listings with availability status.</li>
+                <li>✦ <strong>Interactive UI:</strong> Clean, responsive dashboard designed with Python and Streamlit.</li>
+                <li>✦ <strong>Local Relational Database:</strong> SQLite integration for storing member profiles and booking requests.</li>
+                <li>✦ <strong>Social Impact:</strong> Encourages collaborative resource sharing to lower farming costs.</li>
+              </ul>
+            </div>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Streamlit</span>
+              <span>SQLite</span>
+              <span>CRUD Architecture</span>
+              <span>Responsive Web</span>
+            </div>
+          </article>
+
+          <!-- Ongoing Coursework & Future Project Card -->
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-badge badge-academic">Academic Coursework</div>
+              <div class="project-links">
+                <!-- EDIT HERE: Replace with your GitHub link -->
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" title="View Code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Machine Learning Foundations &amp; Lab Studies</h3>
+            
+            <p class="project-description">
+              Curated implementations of foundational algorithms created as part of the AIML degree program at RCPIT. 
+              Focuses on understanding basic statistical models, data visualization, predictive classification, and 
+              clean code practices in Python.
+            </p>
+
+            <div class="project-highlights-box">
+              <h4>Topics Explored:</h4>
+              <ul>
+                <li>✦ Supervised learning: Linear Regression &amp; Decision Trees</li>
+                <li>✦ Basic dataset preprocessing and feature inspection</li>
+                <li>✦ Model evaluation metrics (Accuracy, Confusion Matrix)</li>
+                <li>✦ Interactive notebook demonstrations</li>
+              </ul>
+            </div>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Jupyter</span>
+              <span>AIML Fundamentals</span>
+              <span>Statistics</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            My formal engineering training in Artificial Intelligence &amp; Machine Learning.
+          </p>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-header">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-titles">
+              <h3 class="edu-degree">Bachelor of Technology (B.Tech) in AIML</h3>
+              <p class="edu-major">Artificial Intelligence and Machine Learning Engineering</p>
+              <h4 class="edu-college">R. C. Patel Institute of Technology (RCPIT), Shirpur</h4>
+            </div>
+            <div class="edu-status-badge">
+              <span>Second Year (2024 - Present)</span>
+            </div>
+          </div>
+
+          <div class="edu-divider"></div>
+
+          <div class="edu-details-grid">
+            <div class="edu-col">
+              <h4>Core Coursework &amp; Subjects</h4>
+              <ul class="edu-list">
+                <li>✦ Data Structures and Algorithms</li>
+                <li>✦ Object-Oriented Programming (Python)</li>
+                <li>✦ Artificial Intelligence Fundamentals</li>
+                <li>✦ Database Management Systems (DBMS)</li>
+                <li>✦ Discrete Mathematics &amp; Statistics</li>
+              </ul>
+            </div>
+
+            <div class="edu-col">
+              <h4>Campus Engagement &amp; Growth</h4>
+              <ul class="edu-list">
+                <li>✦ Active participant in engineering project seminars</li>
+                <li>✦ Developing practical software solutions for community needs</li>
+                <li>✦ Regular participation in coding lab sessions and workshops</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            I am always eager to connect with mentors, peers, and fellow enthusiasts in AI/ML and software development.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+            <!-- Email -->
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect width="20" height="16" x="2" y="4" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Direct Email</h4>
+                <!-- EDIT HERE: Replace placeholder with your real email -->
+                <a href="mailto:your.email@example.com" class="info-value">your.email@example.com</a>
+              </div>
+            </div>
+
+            <!-- College / Location -->
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <h4>College &amp; Location</h4>
+                <p class="info-value">RCPIT &bull; Shirpur, Maharashtra, India</p>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect width="4" height="12" x="2" y="9"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+              </div>
+              <div>
+                <h4>LinkedIn Profile</h4>
+                <!-- EDIT HERE: Replace placeholder with your real LinkedIn URL -->
+                <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="info-value">
+                  linkedin.com/in/your-profile
+                </a>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </div>
+              <div>
+                <h4>GitHub Profile</h4>
+                <!-- EDIT HERE: Replace placeholder with your real GitHub URL -->
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="info-value">
+                  github.com/your-username
+                </a>
+              </div>
+            </div>
+
+            <!-- Opportunities Box -->
+            <div class="availability-box">
+              <div class="availability-status">
+                <span class="pulsing-circle"></span>
+                <span>Open for:</span>
+              </div>
+              <ul class="availability-list">
+                <li>✦ Student internships and learning fellowships</li>
+                <li>✦ AI/ML study groups &amp; academic collaborations</li>
+                <li>✦ Project discussions and technical mentorship</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" required />
+                <span class="error-msg" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="e.g. rahul@example.com" required />
+                <span class="error-msg" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Purpose / Subject</label>
+                <select id="subject" name="subject">
+                  <option value="internship">Internship / Project Opportunity</option>
+                  <option value="mentorship">Mentorship / Advice</option>
+                  <option value="collaboration">Academic Collaboration</option>
+                  <option value="other">General Greeting</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                <span class="error-msg" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+            </form>
+
+            <!-- Toast Success Notification -->
+            <div id="toastNotification" class="toast hidden">
+              <div class="toast-icon">✓</div>
+              <div class="toast-content">
+                <strong>Message Sent!</strong>
+                <p>Thank you for reaching out, Shruti will get back to you soon.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">Shruti Shah<span class="accent-dot">.ai</span></span>
+        <p class="footer-desc">Second-Year AIML Student @ RCPIT &bull; Aspiring AI/ML Engineer.</p>
+      </div>
+
+      <div class="footer-right">
+        <p>&copy; 2026 Shruti Shah. Built with HTML, CSS &amp; JavaScript.</p>
+        <a href="#hero" class="back-to-top" title="Back to top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Resume Modal Dialog -->
+  <div class="modal" id="resumeModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Resume Download</h3>
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="resume-info-box">
+          <div class="resume-icon">📄</div>
+          <div>
+            <h4>Shruti Shah — Resume</h4>
+            <p>Second-Year AIML Engineering Student | RCPIT</p>
+          </div>
+        </div>
+
+        <p class="modal-note">
+          To download your resume, place your <code>resume.pdf</code> file into this portfolio folder:
+          <br />
+          <code>C:\Users\shrut\.gemini\antigravity\scratch\portfolio\resume.pdf</code>
+        </p>
+
+        <div class="modal-actions">
+          <!-- Direct download anchor that automatically works once resume.pdf is placed -->
+          <a href="resume.pdf" download="Shruti_Shah_Resume.pdf" class="btn btn-primary" id="directDownloadBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span>Download resume.pdf</span>
+          </a>
+          <button class="btn btn-secondary" id="modalDismiss">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- External JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

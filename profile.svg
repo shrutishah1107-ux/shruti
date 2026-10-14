@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#31104b" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Skin Tone Gradient -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa" />
+      <stop offset="100%" stop-color="#fdba74" />
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Outfit Gradient -->
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Base Background -->
+  <rect width="400" height="400" rx="200" fill="url(#bgGrad)" />
+
+  <!-- Ambient Glow Circle -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#accentGrad)" stroke-width="4" opacity="0.6" stroke-dasharray="12 8" />
+
+  <!-- Abstract Tech Grid Lines -->
+  <g opacity="0.15" stroke="#38bdf8" stroke-width="1.5">
+    <line x1="80" y1="120" x2="320" y2="120" />
+    <line x1="60" y1="200" x2="340" y2="200" />
+    <line x1="80" y1="280" x2="320" y2="280" />
+    <circle cx="100" cy="120" r="4" fill="#38bdf8" />
+    <circle cx="300" cy="200" r="4" fill="#818cf8" />
+    <circle cx="120" cy="280" r="4" fill="#c084fc" />
+  </g>
+
+  <!-- Hair Back -->
+  <path d="M120 180 C110 260 130 330 145 350 C155 350 160 300 160 250 L240 250 C240 300 245 350 255 350 C270 330 290 260 280 180 Z" fill="url(#hairGrad)" />
+
+  <!-- Body / Shoulders -->
+  <path d="M110 380 C110 320 145 285 200 285 C255 285 290 320 290 380 Z" fill="url(#suitGrad)" />
+  
+  <!-- Collar / Inner Top -->
+  <polygon points="180,285 200,325 220,285 200,280" fill="#ffffff" opacity="0.9" />
+  <polygon points="185,285 200,315 215,285" fill="#38bdf8" opacity="0.4" />
+
+  <!-- Neck -->
+  <rect x="185" y="230" width="30" height="60" rx="8" fill="url(#skinGrad)" />
+
+  <!-- Face -->
+  <ellipse cx="200" cy="190" rx="55" ry="65" fill="url(#skinGrad)" />
+
+  <!-- Hair Front / Style -->
+  <path d="M140 180 C140 120 160 100 200 100 C240 100 260 120 260 180 C260 190 255 220 250 230 C240 170 230 150 200 150 C170 150 160 170 150 230 C145 220 140 190 140 180 Z" fill="url(#hairGrad)" />
+  
+  <!-- Hair Parting Flare -->
+  <path d="M160 140 C175 125 200 125 210 135 C190 135 175 145 160 160 Z" fill="#312e81" opacity="0.5" />
+
+  <!-- Eyes -->
+  <ellipse cx="180" cy="188" rx="4.5" ry="5.5" fill="#0f172a" />
+  <ellipse cx="220" cy="188" rx="4.5" ry="5.5" fill="#0f172a" />
+  <circle cx="181.5" cy="186.5" r="1.5" fill="#ffffff" />
+  <circle cx="221.5" cy="186.5" r="1.5" fill="#ffffff" />
+
+  <!-- Eyebrows -->
+  <path d="M172 176 Q180 173 189 176" fill="none" stroke="#1e1b4b" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M211 176 Q220 173 228 176" fill="none" stroke="#1e1b4b" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Glasses (Smart Engineering look) -->
+  <rect x="166" y="178" width="28" height="20" rx="5" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.85" />
+  <rect x="206" y="178" width="28" height="20" rx="5" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.85" />
+  <line x1="194" y1="187" x2="206" y2="187" stroke="#38bdf8" stroke-width="2" opacity="0.85" />
+  <line x1="158" y1="185" x2="166" y2="186" stroke="#38bdf8" stroke-width="1.5" opacity="0.85" />
+  <line x1="234" y1="186" x2="242" y2="185" stroke="#38bdf8" stroke-width="1.5" opacity="0.85" />
+
+  <!-- Nose -->
+  <path d="M200 192 L198 205 L203 205" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
+
+  <!-- Smile -->
+  <path d="M190 220 Q200 228 210 220" fill="none" stroke="#b91c1c" stroke-width="2.2" stroke-linecap="round" />
+
+  <!-- Cheerful Blush -->
+  <circle cx="168" cy="206" r="7" fill="#f43f5e" opacity="0.2" />
+  <circle cx="232" cy="206" r="7" fill="#f43f5e" opacity="0.2" />
+
+  <!-- AI / Tech Halo Sparkles -->
+  <g fill="#c084fc">
+    <path d="M305 130 Q315 130 315 120 Q315 130 325 130 Q315 130 315 140 Q315 130 305 130 Z" />
+    <path d="M75 220 Q83 220 83 212 Q83 220 91 220 Q83 220 83 228 Q83 220 75 220 Z" />
+    <path d="M280 270 Q286 270 286 264 Q286 270 292 270 Q286 270 286 276 Q286 270 280 270 Z" />
+  </g>
+</svg>
